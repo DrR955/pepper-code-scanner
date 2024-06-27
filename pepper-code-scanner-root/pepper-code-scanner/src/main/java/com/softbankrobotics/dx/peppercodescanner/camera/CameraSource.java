@@ -610,9 +610,9 @@ public class CameraSource {
          * Releases the underlying receiver.  This is only safe to do after the associated thread
          * has completed, which is managed in camera source's release method above.
          */
-        @SuppressLint("Assert")
+//        @SuppressLint("Assert") // Thanks to https://github.com/ravi8x/Barcode-Reader/pull/42
         void release() {
-            assert (mProcessingThread.getState() == State.TERMINATED);
+//            assert (mProcessingThread.getState() == State.TERMINATED); // Thanks to https://github.com/ravi8x/Barcode-Reader/pull/42
             mDetector.release();
             mDetector = null;
         }

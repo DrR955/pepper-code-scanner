@@ -1,3 +1,6 @@
+# DISCLAIMER
+This fork aims to fix a NullPointerException that occurs inside of the CameraSource class. The fix itself is by https://github.com/muhammad-farhan-bakht, and can be found here: https://github.com/ravi8x/Barcode-Reader/pull/42 .
+
 # Pepper Code Scanner Library
 
 This Android Library will help you to scan barcodes and QR codes using the Google Vision library.
